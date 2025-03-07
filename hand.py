@@ -36,7 +36,7 @@ def linear_interpolation(value, in_min, in_max, out_min, out_max):
     return int(out_min + (float(value - in_min) / float(in_max - in_min)) * (out_max - out_min))
 
 # Start capturing video
-cap = cv2.VideoCapture(1)
+cap = cv2.VideoCapture(0)
 
 while cap.isOpened():
     success, image = cap.read()
