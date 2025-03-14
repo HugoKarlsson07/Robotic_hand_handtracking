@@ -16,6 +16,8 @@ mp_hands = mp.solutions.hands
 hands = mp_hands.Hands()
 mp_drawing = mp.solutions.drawing_utils
 
+#finktion that tracks the fingers in a index 0 for down and 1 for upp
+
 def detect_fingers(hand_landmarks):
     finger_tips = [8, 12, 16, 20]  # Index, Middle, Ring, Pinky
     thumb_tip = 4
@@ -36,7 +38,7 @@ def linear_interpolation(value, in_min, in_max, out_min, out_max):
     return int(out_min + (float(value - in_min) / float(in_max - in_min)) * (out_max - out_min))
 
 # Start capturing video
-cap = cv2.VideoCapture(0)
+cap = cv2.VideoCapture(0) #chose the camera its a index that starts with 0
 
 while cap.isOpened():
     success, image = cap.read()
