@@ -68,7 +68,7 @@ while cap.isOpened():
                 # Convert position to degree value for servo control
                 ws, hs = image.shape[1], image.shape[0]
                 servoX = linear_interpolation(px, 0, ws, 180, 0)
-                servoY = linear_interpolation(py, -30, hs, 0, 70)
+                servoY = linear_interpolation(py, -30, hs, 0, 100)
 
                 # Display servo values on screen
                 cv2.rectangle(image, (40, 20), (350, 110), (0, 255, 255), cv2.FILLED)
