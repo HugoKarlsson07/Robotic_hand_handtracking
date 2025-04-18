@@ -1,3 +1,11 @@
+#Name: robotic_hand.ino
+#Author: Hugo Karlsson
+#Date: 2025-04-11
+# This script uses OpenCV and Mediapipe to track hand movements and send data to an Arduino via serial communication.
+# It detects finger positions and sends the servo angles to the Arduino for controlling servos based on hand gestures.
+
+
+
 import cv2
 import mediapipe as mp
 import serial
