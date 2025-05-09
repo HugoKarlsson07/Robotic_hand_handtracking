@@ -1,6 +1,9 @@
 Robotic Hand Handtracking
 This project features a 3D-printed robotic arm controlled by real-time hand gestures using computer vision. It leverages Python and OpenCV for hand tracking and communicates with an Arduino Uno R4 WiFi to actuate servo motors.​
 
+Youtube video
+https://youtu.be/Jrf-QRCd0Hs?feature=shared
+
 Overview
 Control Method: Hand gesture recognition via webcam to a arduino uno r4 via serial
 
